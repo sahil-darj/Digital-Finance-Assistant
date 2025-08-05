@@ -20,9 +20,11 @@ This project is an AI-powered virtual assistant developed using **IBM Watsonx As
 
 - [IBM Watsonx Assistant](https://www.ibm.com/products/watsonx-assistant)
 - [IBM Cloud](https://cloud.ibm.com/)
+- 
 - [Cloud Object Storage (COS)] – For storing documents/knowledge base
 - [Watson NLP (Optional)] – For enhanced text analysis
 - [Watson Discovery (Optional)] – For future document search and retrieval
+- - **Watsonx Assistant** – Chatbot interface
 
 ---
 
@@ -77,6 +79,10 @@ This project is an AI-powered virtual assistant developed using **IBM Watsonx As
 - Financial goal tracking or budget planning suggestions
 
 ---
+
+## 🚀 How to Run
+
+1. Open `index.html` in your browser.
 
 ## ✅ Conclusion
 
