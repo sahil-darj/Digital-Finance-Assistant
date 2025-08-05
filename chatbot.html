@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI Financial Assistant</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to bottom, #eaf0f9, #dfeaf4);
+      height: 100vh;
+      display: flex;
+    }
+
+    .container {
+      display: flex;
+      width: 100%;
+      height: 100%;
+    }
+
+    .left-box {
+      width: 70%;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .left-box .content {
+      text-align: center;
+    }
+
+    .left-box h1 {
+      color: #1a73e8;
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    .left-box p {
+      color: #333;
+      font-size: 1rem;
+      max-width: 700px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+
+    .left-box .footer {
+      text-align: center;
+      margin-top: 40px;
+      color: #888;
+      font-size: 0.9rem;
+    }
+
+    .right-box {
+      width: 30%;
+      background-color: #fff;
+      border-left: 1px solid #ccc;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="left-box">
+      <div class="content">
+        <img src="https://cdn-icons-png.flaticon.com/512/4140/4140048.png" width="60" alt="AI Logo" style="margin-bottom: 20px;">
+        <h1>AI Financial Literacy Assistant</h1>
+        <h3 style="color:#6b7280; margin-bottom: 20px;">Powered by IBM Watsonx</h3>
+        <p>
+          This intelligent assistant helps users explore topics like UPI, banking frauds,
+          digital payments, savings, and more. Backed by trusted sources such as RBI, SEBI, and NPCI,
+          it's a smart way to get real-time financial guidance in simple language.
+        </p>
+        <p style="margin-top: 20px;">💬 Use the chatbot on the right to begin — ask anything about finance and get instant help!</p>
+      </div>
+
+      <div class="footer">
+        © 2025 • Digital Finance Assistant • Built with IBM Cloud & Watsonx
+      </div>
+    </div>
+
+    <div class="right-box">
+      <!-- IBM Watson Assistant Embed -->
+      <iframe 
+        src="YOUR_WEB_CHAT_EMBED_URL_HERE"
+        title="Digital Assistant">
+      </iframe>
+    </div>
+  </div>
+<script>
+  window.watsonAssistantChatOptions = {
+    integrationID: "8b72f98c-7163-4224-90c3-b3873ec5f278", // The ID of this integration.
+    region: "us-south", // The region your integration is hosted in.
+    serviceInstanceID: "e024de5c-69d2-46fd-b542-4688ec7bad90", // The ID of your service instance.
+    onLoad: async (instance) => { await instance.render(); }
+  };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+    document.head.appendChild(t);
+  });
+</script>
+</body>
+</html>
