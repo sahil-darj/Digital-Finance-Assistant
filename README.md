@@ -82,7 +82,7 @@ This project is an AI-powered virtual assistant developed using **IBM Watsonx As
 
 ## 🚀 How to Run
 
-1. Open `index.html` in your browser.
+1. Open `chatbot.html` in your browser.
 
 ## ✅ Conclusion
 
