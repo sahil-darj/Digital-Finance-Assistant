@@ -22,8 +22,7 @@ This project is an AI-powered virtual assistant developed using **IBM Watsonx As
 - [IBM Cloud](https://cloud.ibm.com/)
 - 
 - [Cloud Object Storage (COS)] – For storing documents/knowledge base
-- [Watson NLP (Optional)] – For enhanced text analysis
-- [Watson Discovery (Optional)] – For future document search and retrieval
+
 - - **Watsonx Assistant** – Chatbot interface
 
 ---
